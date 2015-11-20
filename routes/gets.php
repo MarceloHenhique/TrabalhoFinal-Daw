@@ -6,22 +6,12 @@ $app->get("/", function () use ($app) {
 	$logic = new Logic ;
 
 	if($logic::ifLogado()) {
-		require_once "templates/login/index.php";
+		require_once "templates/index.php";
 	} else {
-		require_once "templates/login/index.php";
+		require_once "templates/index.php";
 	}
 
 	get_footer();
-});
-
-$app->get("/index", function () use ($app, $con) {
-
-	get_header();
-
-	require_once "templates/dashboard.php" ;
-
-	get_header();
-
 });
 
 $app->get("/index/", function () use ($app, $con) {
@@ -30,7 +20,7 @@ $app->get("/index/", function () use ($app, $con) {
 
 	require_once "templates/dashboard.php" ;
 
-	get_header();
+	get_footer();
 
 });
 
@@ -40,7 +30,17 @@ $app->get("/createSimu/", function () use ($app, $con) {
 
 	require_once "templates/exams/create.php" ;
 
+	get_footer();
+
+});
+
+$app->get("/logar/", function () use ($app, $con) {
+
 	get_header();
+
+	require_once "templates/login/index.php" ;
+
+	get_footer();
 
 });
 
@@ -64,6 +64,8 @@ $app->get("/question/", function () use ($app, $con) {
 
 	echo json_encode($questions);
 })->name("hello");
+
+
 
 $app->get("/topics/", function() use ($app, $con) {
 	$app->response->headers->set("Content-Type", "text/plain");

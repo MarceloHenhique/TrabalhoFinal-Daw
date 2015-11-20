@@ -13,6 +13,7 @@
 	<!-- <link rel="stylesheet" type="text/css" href="../../enem/build/css/dash.css" /> -->
 	<link rel="stylesheet" type="text/css" href="../../enem/build/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="../../enem/build/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../enem/build/css/dashboard.css" />
 
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
 

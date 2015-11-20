@@ -10,7 +10,7 @@
         <span style="color:red" ng-show="loginForm.pssw.$dirty && loginForm.pssw.$invalid">
         <span ng-show="loginForm.pssw.$error.required">Username is required.</span>
       </p>
-      <button class="btn btn-warning form-control" type="submit" ng-disabled="login.length == 0 || pssw.length == 0" ng-click="fCtrl.log(user)" />Logar</button>
+      <button class="btn btn-success form-control" type="submit" ng-disabled="login.length == 0 || pssw.length == 0" ng-click="fCtrl.log(user)" />Logar</button>
       <br />
       <h1> {{ login.length }} </h1>
       <h1> {{ result }} </h1>

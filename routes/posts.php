@@ -17,7 +17,6 @@ $app->post("/caduser/", function() use ($app, $con) {
 	echo "success" ;
 });
 
-
 $app->post("/results/", function () use ($app, $con) {
 	$app->response->headers->set("Content-Type", "text/plain");
 
